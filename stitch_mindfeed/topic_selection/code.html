@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explore Topics - MindFeed</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        .topic-card[aria-checked="true"] {
+            outline: 2px solid #195de6;
+            outline-offset: -2px;
+        }
+        .topic-card[aria-checked="true"] .overlay-gradient {
+            background-image: linear-gradient(0deg, rgba(25, 93, 230, 0.4) 0%, rgba(25, 93, 230, 0) 50%);
+        }
+        .topic-card[aria-checked="true"] .icon-container {
+            background-color: #195de6;
+            color: #ffffff;
+        }
+        .topic-card[aria-checked="true"] .icon-container .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#195de6",
+              "background-light": "#f6f6f8",
+              "background-dark": "#111621",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Main Content -->
+<main class="flex-1 pb-28"> <!-- Padding bottom to avoid overlap with sticky button -->
+<!-- Top App Bar -->
+<div class="flex items-center p-4">
+<h1 class="text-slate-900 dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] flex-1">Customize Your MindFeed</h1>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3 sticky top-0 bg-background-light dark:bg-background-dark z-10">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 dark:text-slate-400 flex border border-r-0 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-l-0 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 h-full placeholder:text-slate-400 dark:placeholder:text-slate-500 px-4 rounded-l-none pl-2 text-base font-normal leading-normal" placeholder="Search for topics like 'Astrophysics'" value=""/>
+</div>
+</label>
+</div>
+<!-- Image Grid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div aria-checked="true" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="Abstract image representing science, with swirling atoms and galaxies." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSkvMpBnW0KH9V3siB3aE8R26XWvqu1V91PhBF-k313hn8VGFp7NRzGw9W2ttN2w8udv5FRJt3SeMZBYutu0YJnd-bOPYiE4yUReS2uvubWjz7uAhyXmYB4xe-Iz2I-pjGLSHJ0DANx_AOPKHmgPPUEW7JzfngNI5KnrOUny1CmGH_6DhVMbhxYdjdwP6EVfTXzaTqLqYDcZrs7R7_riRjzlyxcmglsGpC5job7LCJfAApjmBKpgSTTKjC-Uq3wRB5vl6bIFLna1o");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Science</p>
+</div>
+<div aria-checked="false" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="Ancient scrolls and historical artifacts representing history." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9wQ0euDOk4HC0jyTLHfmCZEOoZAYYfzDSarJg-LAXS_ddRdPJRNeg79EpM-Z26CJUK5V0Qrl4B9W8Wqy3EDsGjbpil98OD6C4MSOxw37W42Kf8BfEQ7oKms98zoIX1X7OomCL0jFn-GdOjvoKprBwVuKl6joUPf14maECMHMeb8_ymI5Putdo6IJCeq1fOq5FK5gBsLFkv9I6WQVJhNiIJia6EhWCb2TbnZl4__ufV_2Y9EguCrsNUnX1rc_R94VNEaMgY6Tqwag");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">add</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">History</p>
+</div>
+<div aria-checked="true" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="Futuristic circuit board patterns representing technology." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDfm9Sy9NN5-1eEuWyv2gFAvzmP1mQDy83xE1r_fnAYKCuv7oGAnSRv5x7ludtMXJQyliOgGbx65ux7H6egb_3DMDf0y3f5NqlJOMya1eJPNJBmQQn7GjgU85vSIDNu5VBdzEGRWBDdnkiA8p0FJqW0TTOkw9BB0X737XATc-slYrQT1e_kw9QxyVupDvECOGZAUd48jQ4TZqK258aZdlUoW9DmihtM1g6qHH60hiZX_HF-ZM1ukR8Sh5NBIODwrLf5ppIgRmk978");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Technology</p>
+</div>
+<div aria-checked="false" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="Geometric shapes and formulas representing mathematics." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfvrozKozsiqeEqIFekswhs6_8Sd6DiFOOMJKaZWz3Dog1I4P_s5Rc3WLc8zDl8tC4zTnFdq11jJchITBwbhHdS02GddB0YeHxngLsEt8V4UBf2hqdpZHzvuqvjab_ffhnqNmsUAw5Gu1C1zJCYT0-W3EP2JBs99GO8zLgNkKez1zbGlIdrPXuGhpOKdpcVtkt4TstMq8DhsouActO3UHQfdT0D99jRAbC_n5wKzTIVHVmloYaHRYaE_ecGSlWJtEja6bhTfVise8");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">add</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Mathematics</p>
+</div>
+<div aria-checked="false" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="Colorful paint strokes on a canvas for arts and culture." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7Udc2XXMT9HUeScvDHjqfbCJLX5v2qVyDQoJQGdp_H7S4e928owO5GT8lG9fwoIhhJ0SJjTp5-sPj-a4BfwfqcSHGGTqFsFN57LZGUp4Ix8rZBN_Kahw5-amXSgrdxBoYpIUgNXqapYHtj_c2gM8pL0jSoz9KqgUULxrLvxLVssnShSzn8Uo_xL5tsybS4Jx60ONwAnIVC7mMJt58gvxI7yd9ZZTkAPr5ZasgZIHZwxcalnFbnEEeyex0UQg3YLScYY5ipW06bjA");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">add</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Arts &amp; Culture</p>
+</div>
+<div aria-checked="false" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="A classical statue head representing philosophy." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJ426yJcfzZxIax5dIZfgX0iGNTORzp_yp_8uDyFMch2wTWAMX7EsqUKKiAQqlKMx7kVekw8GxL1Bg0XoWXmqtDXHUxxzjfX7ztB3BlgvdEcR1k0r8MgRhk_JMXercsNrI6tsiswlZv5VbjaLGkpYmPzz8i4KJ2vfQnKv2w0nWFlek3Abefv0a7F6jrlM7e2jMn9A533SYJSI5C_fJUqrb8Yal_gHw4Hr81Hk0Oi_RwlAkw9lbHy71P4KfcaHQtMZhpUa2MFLHtTU");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">add</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Philosophy</p>
+</div>
+<div aria-checked="true" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="Stock market charts and graphs for economics." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzLBc7yuAdBoEBfZAoGknIbPnQDrWslMFZJYdEMolY8XPvC2qSjiJjPbMylO04meKw2C5MLcqmmVtA7yBcO-aansicVCV0L24tGc3lpQIbiH6sKz4_quRiqrguxWhCgOSfRXInj8yc5498yR4gvYvWzsylN8AJSBn0VSj3KgZQW0_N8HpxFGqVMBgf_9kydZcEn7SVBjREMKudttn4GtfVpWSmgcjqEJjRVH5enC02-DOO2FFXe6n6M93bGBeINr-WsR6KMFM1Jjo");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Economics</p>
+</div>
+<div aria-checked="false" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="A stack of old books representing literature." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCX8Vx-_9gOjPGhWEu6UohhZBr-FGV735BbiXX_UHcoBCf8tEkgF3GSZWgPNYn7As7iGPUEBCRzK--lwE3c4XTHL0a8RhUpC1gsDLtqpvRGfZD0Qla-1HxNpuXF2-ZkqzM9TWRlpVF9UQGQuONi7r0JbTa0ROgsAQRf6aOnDkucR8YTegMkO9_yG3hyCxL87EiF8Gnm604Z5DahmZGzynsgSH1XzYJYhq0iPzEg3qctC0AU_2mnwRHtSaupHI6KG-K2WWBpCjk-gOI");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">add</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Literature</p>
+</div>
+<div aria-checked="false" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="Healthy food and a stethoscope for health and wellness." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQmgA9acpPYaRVIjpMF_V75bQDR55q-7MCNiKa4iO67NVcqdproaDa6jlAY5mUoL9rHrb6iQkYYvytmusicORS9YWvBcWdNDM1833BDWSKEDh2Q8E98xG7LM4ngxYVS2MJNcBsIkmbIpWg7wUhZXMe6rpMAwVZ1ZyE-f6AxAmcT_63tcwf_qZxpin2_gIB11VO4z0fXEoj-pJNHD8WkFjxz0D8u36bWVbZTyBQQvnP-LRtVDNhpH2aoR4Q2X3ufnULGj2Bu0T0rl4");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">add</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Health &amp; Wellness</p>
+</div>
+<div aria-checked="false" class="topic-card relative bg-cover bg-center flex flex-col rounded-xl justify-end aspect-square cursor-pointer transition-all duration-200" data-alt="Lines of code on a computer screen for computer science." role="checkbox" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqJUf4JJl9t9ZQBzwt9kx6YMAufmLGF6Qes3Oa1c9p-PKa2K4nB_3r1eeRhRJTaeL1iZA8kxxg8dlwMLVXg3Xsgt-G05YDrjSirtvYoM5pbvX7GaSWozvp2z3ksibkMZ8GXCXyLhDiwuFgPuO-uFeMO9Yf2vx2Blg6tlZ8iw4cxc7_R0WrP3C76tBW_tMu3rTZlsY8OqoFucU01SqUY6ocsGokFcENiV0uKqjukyFt5MibYTliOoNK5OLkBUJHH_lP5u4jVaq1q_o");' tabindex="0">
+<div class="overlay-gradient absolute inset-0 rounded-xl bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="icon-container absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">add</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full p-4 z-10">Computer Science</p>
+</div>
+</div>
+</main>
+<!-- Sticky Bottom Bar -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 w-full bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/30">
+<span class="truncate">Build My Feed (3)</span>
+</button>
+</div>
+</div>
+</body></html>
