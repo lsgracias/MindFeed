@@ -101,12 +101,6 @@ Traditional education often struggles to compete with the engaging nature of soc
 - School adoption rate
 - Cost savings for districts
 
-## 🔒 Privacy & Safety
-- Age-appropriate content filtering
-- COPPA/FERPA compliance
-- No personal data sharing
-- Secure video storage
-- Parental controls available
 
 ## 🙏 Acknowledgments
 - OpenAI for Sora API access
