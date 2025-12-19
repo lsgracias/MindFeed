@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile - MindFeed</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#195de6",
+              "background-light": "#f6f6f8",
+              "background-dark": "#111621",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between sticky top-0 z-10 bg-background-light dark:bg-background-dark">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white" style="font-size: 24px;">arrow_back</span>
+</div>
+<h2 class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Profile</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-zinc-900 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined" style="font-size: 24px;">settings</span>
+</button>
+</div>
+</div>
+<!-- Profile Header -->
+<div class="flex p-4 @container">
+<div class="flex w-full flex-col gap-4 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" data-alt="User's profile picture, an abstract blue and purple gradient." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7e92HGk0RkBV8NWE6ZqAdmW9tRedjo0-7UXI-6uRe88fTpegkmpBJxg1rLwiS0uyXHldmXKHssLxAALCmmqZ27jVGrI-aSozMGxgoONkWrHkRgMW1XktWJuM4pdXTJGbyzLMDBtkdPBDBB3nayqHB2Vh8J3iMWDy-XVpOGzJrpapWLDTOXqlQSoD03L2_2Rz1h7S2leyZY46MsaGo6MwW8-nFw82z8lVQLFRV_pENVHUL0Biwg-qfcPXHcvZNpU1wSVZnuDLTlpQ");'></div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-zinc-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Alex Doe</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-base font-normal leading-normal text-center">@alexdoe</p>
+</div>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[480px]:w-auto">
+<span class="truncate">Edit Profile</span>
+</button>
+</div>
+</div>
+<!-- Stats -->
+<div class="flex flex-wrap gap-4 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-4 bg-zinc-200/50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+<p class="text-zinc-600 dark:text-zinc-400 text-base font-medium leading-normal">Topics Explored</p>
+<p class="text-zinc-900 dark:text-white tracking-light text-2xl font-bold leading-tight">12</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-4 bg-zinc-200/50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+<p class="text-zinc-600 dark:text-zinc-400 text-base font-medium leading-normal">Videos Completed</p>
+<p class="text-zinc-900 dark:text-white tracking-light text-2xl font-bold leading-tight">142</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-4 bg-zinc-200/50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+<p class="text-zinc-600 dark:text-zinc-400 text-base font-medium leading-normal">Hours Learned</p>
+<p class="text-zinc-900 dark:text-white tracking-light text-2xl font-bold leading-tight">28</p>
+</div>
+</div>
+<!-- Section Header: Learning Progress -->
+<h2 class="text-zinc-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Learning Progress</h2>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-4 p-4">
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between">
+<p class="text-zinc-900 dark:text-white text-base font-medium leading-normal">Psychology</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">75%</p>
+</div>
+<div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-zinc-800"><div class="h-2 rounded-full bg-primary" style="width: 75%;"></div></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between">
+<p class="text-zinc-900 dark:text-white text-base font-medium leading-normal">Quantum Physics</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">40%</p>
+</div>
+<div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-zinc-800"><div class="h-2 rounded-full bg-primary" style="width: 40%;"></div></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between">
+<p class="text-zinc-900 dark:text-white text-base font-medium leading-normal">Ancient History</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">90%</p>
+</div>
+<div class="w-full h-2 rounded-full bg-zinc-200 dark:bg-zinc-800"><div class="h-2 rounded-full bg-primary" style="width: 90%;"></div></div>
+</div>
+</div>
+<!-- Section Header: My Library -->
+<h2 class="text-zinc-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">My Library</h2>
+<!-- Tab Navigation -->
+<div class="px-4">
+<div class="flex w-full space-x-2 rounded-lg bg-zinc-200 dark:bg-zinc-900 p-1">
+<button class="flex-1 rounded-md py-2 text-sm font-medium text-center text-white bg-primary">Saved</button>
+<button class="flex-1 rounded-md py-2 text-sm font-medium text-center text-zinc-700 dark:text-zinc-300">History</button>
+<button class="flex-1 rounded-md py-2 text-sm font-medium text-center text-zinc-700 dark:text-zinc-300">My Notes</button>
+</div>
+</div>
+<!-- Content Grid -->
+<div class="grid grid-cols-2 gap-4 p-4">
+<div class="flex flex-col gap-2">
+<div class="w-full aspect-[4/3] rounded-lg bg-cover bg-center" data-alt="Thumbnail of a video about the human brain." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFSullFMx-IqSjvRk1rYds72ICLmOPoPJiswGSaC4ZEbZuSNee66qGeL_VPCVfwO4Ox3CFb7a4Qn0usAk2vpezh9eFG1JlsbOAqG8WkE36k3d0wRIwi1OoidivMXdqWOzr4AL4FZtWFZVQFOUgXEPsWwzkKuO8h86km2qbyitEmISr2UgPMNZSWRL1tz7vpEaKlYMHGSYt8L3cHiZ2ivLXnyLOzv-iYL9lQ12RwlDfZZYed9ZwMYjHbGltMu8X37RkT-VFK3hDziI')"></div>
+<div class="flex flex-col">
+<p class="text-zinc-900 dark:text-white font-semibold text-sm leading-tight">The Science of Memory</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-xs">Psychology</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="w-full aspect-[4/3] rounded-lg bg-cover bg-center" data-alt="Thumbnail of a video about ancient Rome." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqxfNlCuZ65KHaPixdSRplX_pIw8px2Ve3kHnvOtAhaHMGY-R-focOu92HxmFFiw2C3dXNhTxO-USsCThMd8FY6K4OE8VbUNMQnt2VuyPDRka60nVYZYmFiTKnYpiOcQBd8emRvD2NRRsEcbBs9vgWohBZuybqp06Ki78VPPudsiXBxQBjwMWwQMLDQAn8cDGzWihekFde-SushLHYjBt7MxOMmfZQXmadbCKbiUHwAYTOLn7N9c8p0Mh6VmmMBUuf0A3hqBaHGzE')"></div>
+<div class="flex flex-col">
+<p class="text-zinc-900 dark:text-white font-semibold text-sm leading-tight">Fall of the Roman Empire</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-xs">Ancient History</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="w-full aspect-[4/3] rounded-lg bg-cover bg-center" data-alt="Thumbnail of a video about space and galaxies." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRuVNUcftyqlZLI4jSRchJjze8llxpRjFhN0lB-dZOEthHanR1OcLOTcnMHsTu0NCQNnF_m5ZQyxuOjXbutPFwnp4fNMPcU4Ir4Escb2QzCeq9ffLklRZoJnVfuNqb-44KrxN6pzQthXSAnjoHI8pX7ALlwb_OK4-b4O68FvMNRIAjKZiHWk7qf8dveFcOor5kn4RFONm_2khMbVxhAGqojIZgtjBQjcMoZZ2B0Ju55No0VNK_dDY1F4qqnEfZFr18hpmxsYOG-Ds')"></div>
+<div class="flex flex-col">
+<p class="text-zinc-900 dark:text-white font-semibold text-sm leading-tight">Introduction to Black Holes</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-xs">Quantum Physics</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="w-full aspect-[4/3] rounded-lg bg-cover bg-center" data-alt="Thumbnail of a video about philosophy." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxAJeDpNjlagfrNW1CANRBCARNuiVX4wHzhnFrsf2nHPJpDftcxxoFdUuLiwN7u56TtYi7I32FYp43KECTd_6wD4h0QSQSxFUUtc_PixVxXocpXrIPy4YcdiuJ3W4um3wSFNTbNc1KhiUYyqs8NV_wSGFduproEdTH-Art-L30i37EF7PMjg98fTY3R-nxGuHEBOv1sR8n_JoUxHd1dxzbuVZFUNa0KzKVQ4EhYf4NUlvtJkXMdIomOnjeb9xpY3kl44ehP381FBs')"></div>
+<div class="flex flex-col">
+<p class="text-zinc-900 dark:text-white font-semibold text-sm leading-tight">Stoicism for Modern Life</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-xs">Philosophy</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>

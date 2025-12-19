@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MindFeed - Video Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2A4D69",
+              "accent": "#4ECDC4",
+              "background-light": "#F7F7F7",
+              "background-dark": "#111621",
+              "text-light": "#333333",
+              "text-dark": "#E0E0E0",
+              "text-secondary-light": "#888888",
+              "text-secondary-dark": "#A0A0A0",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1E242F",
+              "border-light": "#EAEAEA",
+              "border-dark": "#2E3645",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<button class="flex size-12 shrink-0 items-center justify-center text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-text-light dark:text-text-dark gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Media Player -->
+<div class="px-4">
+<div class="relative flex items-center justify-center bg-cover bg-center aspect-video rounded-xl overflow-hidden" data-alt="Abstract background image for video placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVNQYFcGwe0a0UxLYAkT-_VPDMfmCctt8pJvPO-q6sRRBxXcN7sbBofbCuMRdoauzPQoXTAbesp7JADEz9sUDTybWLOgSmIRNZ0cC5ePeRK-A6OZiYAi4_UvMTcPmta4JT2AF5H3dnbogMpPLIR-CsWAYmgpXL5J6ZF5DZ5j2xo7o0COMi3NhBBP_fPRKmvzdhYB8XDtoWuwK8MQ9D8UtL_I3fWSHHLHpNiG9CIYh29Bg4YummWWVABWMps8xkN7EfKErCFQWPj_Y");'>
+<button class="flex shrink-0 items-center justify-center rounded-full size-16 bg-black/40 text-white">
+<span class="material-symbols-outlined !text-4xl">play_arrow</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 px-4 py-3">
+<div class="flex h-4 items-center justify-center gap-1">
+<div class="h-1 flex-1 rounded-full bg-accent"></div>
+<div class="relative"><div class="absolute -left-1.5 -top-1.5 size-3 rounded-full bg-accent shadow"></div></div>
+<div class="h-1 flex-1 rounded-full bg-white/40"></div>
+</div>
+<div class="flex items-center justify-between">
+<p class="text-white text-xs font-medium leading-normal tracking-[0.015em]">1:45</p>
+<p class="text-white text-xs font-medium leading-normal tracking-[0.015em]">4:30</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Headline Text -->
+<h1 class="text-text-light dark:text-text-dark tracking-tight text-[28px] font-bold leading-tight px-4 text-left pb-1 pt-6">The Paradox of Black Holes Explained</h1>
+<!-- Video Stats -->
+<div class="px-4 pb-4">
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">2.1M views • 3 days ago</p>
+</div>
+<!-- Creator Info Block -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-14 justify-between border-y border-border-light dark:border-border-dark py-4">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="Profile picture of Neil deGrasse Tyson" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDUBDiIwfh5D4MhCongLYqlfuHQEalr9e2p_3e7zSE_2WBNsRDuvm8fjICdpW-cw05dJOCrxC6_R7pMby5mD-Wj_idnBoEUvZt9FMkCG90cOJlc7gWQqFjKmf-wNwXLAtje4eIMu4wbx97Kuy6CLnIJ33MmSGcG-N7QKii-fudtgLS6R4rS5VuIDZgMbI3jtib1wa8uY62GJGFT9pJ9BNrcz3jY8Y7jZFKBvQjLHRw9kDiMBjxJ-PS6qWyabUURQz56VA2nnUeU10w");'></div>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal flex-1">AstroVeritas</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm">Astrophysicist</p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-white text-sm font-bold leading-normal w-fit">
+<span class="truncate">Follow</span>
+</button>
+</div>
+</div>
+<!-- Actions Bar -->
+<div class="@container py-4 px-2">
+<div class="gap-2 px-2 flex flex-wrap justify-start">
+<div class="flex flex-col items-center gap-2 py-2.5 text-center w-20">
+<button class="rounded-full bg-surface-light dark:bg-surface-dark p-3.5 text-primary border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined">thumb_up</span>
+</button>
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">12.3k</p>
+</div>
+<div class="flex flex-col items-center gap-2 py-2.5 text-center w-20">
+<button class="rounded-full bg-surface-light dark:bg-surface-dark p-3.5 text-text-light dark:text-text-dark border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined">bookmark_add</span>
+</button>
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Save</p>
+</div>
+<div class="flex flex-col items-center gap-2 py-2.5 text-center w-20">
+<button class="rounded-full bg-surface-light dark:bg-surface-dark p-3.5 text-text-light dark:text-text-dark border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined">share</span>
+</button>
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Share</p>
+</div>
+</div>
+</div>
+<!-- Expandable Description -->
+<div class="px-4 py-2">
+<div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-border-light dark:border-border-dark">
+<p class="text-text-light dark:text-text-dark text-sm leading-relaxed">
+            Join us on a journey to the edge of space and time as we unravel the mysteries of black holes. From their formation to the mind-bending concept of spacetime distortion, this video covers the fundamental principles of one of the universe's most enigmatic phenomena...
+        </p>
+<button class="text-primary font-bold text-sm mt-2">Read More</button>
+</div>
+</div>
+<!-- Topic Tags -->
+<div class="px-4 py-4">
+<h2 class="text-lg font-bold text-text-light dark:text-text-dark mb-3">Key Topics</h2>
+<div class="flex flex-wrap gap-2">
+<button class="cursor-pointer rounded-full h-8 px-4 bg-accent/20 text-accent text-sm font-medium leading-normal">Astrophysics</button>
+<button class="cursor-pointer rounded-full h-8 px-4 bg-accent/20 text-accent text-sm font-medium leading-normal">Quantum Mechanics</button>
+<button class="cursor-pointer rounded-full h-8 px-4 bg-accent/20 text-accent text-sm font-medium leading-normal">Black Holes</button>
+</div>
+</div>
+<!-- Up Next Section -->
+<div class="py-4">
+<h2 class="text-lg font-bold text-text-light dark:text-text-dark mb-3 px-4">Up Next</h2>
+<div class="flex flex-col gap-4">
+<!-- Related Video Item 1 -->
+<div class="flex items-start gap-4 px-4">
+<div class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg w-32 shrink-0" data-alt="Thumbnail for a video about dark matter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPwlx5LxrCxxgUNIGx6_BlAHzLYm3QirkXE7d_Z4WDU_E3ZyeBqVKvl5sV7Lo9EVF2ylzw-sE5wdD_oUR44m3fON555DcA640LLj6VLKOLrkLK1wwvZ0tTtCyLiT-INkV-suDG2swkkcXIAq15-s2BFhdo5hEsjRV4W6HJhq2f5z0E5GRNRCZA3QZUd7FboyfeIe0eZHIWU-azST_QFKTYuiD6a1NY2ufbUm8khMzu8k5LTu9ubvC-EpUjDYJxb4K6NfqT9lyqsSk");'></div>
+<div class="flex-1">
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-tight line-clamp-2">The Search for Dark Matter</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm mt-1">AstroVeritas</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-xs">890k views</p>
+</div>
+</div>
+<!-- Related Video Item 2 -->
+<div class="flex items-start gap-4 px-4">
+<div class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg w-32 shrink-0" data-alt="Thumbnail for a video about general relativity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDr67f9mLWBEhHyJ40yYNDP1gV41PoVYHPVxUoy-pYgkUZOPjt03d8cLXhU7479ucH1-bXEu_mcSGug2N6Wg4ZLmuyp93mYwDZbDGMMPKVkWX0YgP84wxJLB55k2X8WEVesHuzjEILM5hvH_IxxSfiIFKdvSK1NEEqQqBcYWaBNkf3H0hWpSCZiRXrgjK3d7oxg-HN_q1-Np3moostfpDXOSigveNpbxoi6hVXTBFrVHWzZgFrY3tXgbQ9smkzI838RwuehzKbKmrg");'></div>
+<div class="flex-1">
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-tight line-clamp-2">Einstein's General Relativity in 5 Minutes</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm mt-1">CosmoScribe</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-xs">4.5M views</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-5"></div>
+</div>
+</body></html>

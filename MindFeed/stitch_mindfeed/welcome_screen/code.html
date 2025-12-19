@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MindFeed Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#195de6",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display group/design-root overflow-x-hidden">
+<div class="flex-grow flex flex-col justify-center items-center p-4">
+<!-- App Logo -->
+<div class="flex items-center justify-center pt-8 pb-4">
+<span class="material-symbols-outlined text-white text-4xl mr-2">neurology</span>
+<span class="text-white text-3xl font-bold tracking-tight">MindFeed</span>
+</div>
+<!-- Hero Visual -->
+<div class="flex w-full grow bg-background-light dark:bg-background-dark @container py-3">
+<div class="w-full gap-1 overflow-hidden bg-background-light dark:bg-background-dark @[480px]:gap-2 aspect-[1/1] flex max-w-sm mx-auto">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1" data-alt="Abstract swirling lines of light on a dark background, representing the flow of information and ideas." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvh2j17-rfZT8hqfUGjWfrRrA1xybhZsfoFW39R0BGKKIYqwzUlgrL8qnsgGEu6QEAkF1AG21mQaklZqCEdcGmM7eCcxgHyuLitHkFUjI4WWLE_AZXhh3rQkkyRdn5mlD9jTIiTdjdkvkS4Cx6NsK1Ji8qrKiaoOZvjMm7QQ1O00s-JIhePIVbQSZ_csZlWa_sHlgVqH_IjONrXhPb4jrv9AfDGFaaQ6hwgbt6GpN_4zvxCEO-MyiNBHNzxACX9XMPEg1mD8E7XUU"); background-position: center; border-radius: 9999px;'></div>
+</div>
+</div>
+<!-- HeadlineText -->
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-6">Smarter in Seconds.</h1>
+<!-- BodyText -->
+<p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-md">Discover bite-sized educational videos from the world's best creators.</p>
+</div>
+<div class="pb-8 pt-4 px-4 space-y-4">
+<!-- SingleButton -->
+<div class="flex px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+<!-- MetaText -->
+<p class="text-[#93a5c8] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">Already have an account? Log In</p>
+</div>
+</div>
+</body></html>
